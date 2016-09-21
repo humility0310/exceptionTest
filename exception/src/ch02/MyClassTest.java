@@ -9,8 +9,17 @@ public class MyClassTest {
 
 		try {
 			myclass.dangeroisMethod();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
+		}
+//		catch(Exception e){
+//			e.printStackTrace();
+//		}
+//		catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}catch(MyException e){
+//			e.printStackTrace();
+//		}
+		catch(IOException | MyException e){
 			e.printStackTrace();
 		}
 	}
